@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on Hugo Book</title>
+    <title>golang on Yuchao</title>
     <link>https://Yuchao1999.github.io/categories/golang/</link>
-    <description>Recent content in golang on Hugo Book</description>
+    <description>Recent content in golang on Yuchao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://Yuchao1999.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
