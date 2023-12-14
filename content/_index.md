@@ -4,7 +4,7 @@ type: docs
 ---
 
 <div align=center>
-<img src="./figures/icon.png" alt="icon" style="zoom:60%;" />
+<img src="./figures/conv.png" alt="icon" style="zoom:60%;" />
 </div>
 
 # I am a slow walker, but I always try my best.

@@ -19,6 +19,15 @@ Depthwise Seperable Convolution#Depthwise seperable convolution is the basic c
     </item>
     
     <item>
+      <title>MobileNet v2</title>
+      <link>https://Yuchao1999.github.io/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Yuchao1999.github.io/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v2/</guid>
+      <description>sdasd</description>
+    </item>
+    
+    <item>
       <title>Hugo notes</title>
       <link>https://Yuchao1999.github.io/posts/Hugo-notes/</link>
       <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
@@ -29,15 +38,6 @@ Hugo, written in Go, is a kind of static site generator which is fast and user-f
 Before Hugo#Create a new repository in your github.
 Repository name mast be the [username].github.ioConfig your github pages.
 Hugo directory structrue#--&amp;gt;yourBlogRoot/ (Blog Root) --&amp;gt;archetypes/ --&amp;gt;assets/ --&amp;gt;content/	# markdown files get turned into online pages, posts, etc --&amp;gt;data/ --&amp;gt;i18n/ --&amp;gt;layouts/	# html templates provide structure --&amp;gt;public/ --&amp;gt;resources/ --&amp;gt;static/	# images, css, js files available at site root --&amp;gt;themes/	# downloaded themes --&amp;gt;config.</description>
-    </item>
-    
-    <item>
-      <title>MobileNet v2</title>
-      <link>https://Yuchao1999.github.io/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Yuchao1999.github.io/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v2/</guid>
-      <description></description>
     </item>
     
   </channel>

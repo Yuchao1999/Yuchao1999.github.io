@@ -11,6 +11,7 @@ Official  Code: [Tensorflow](https://github.com/tensorflow/tensorflow/blob/v2.4.
 
 MobileNet is a type of convolutional neural network designed for mobile and embedded vision applications. It is based on a streamlined architeture which uses **depthwise seperable convolutions** to build **light weight** deep neural networks with efficient trade-off between latency and accuracy.
 
+![asdadas](./figures/asd.png)
 
 
 ## Depthwise Seperable Convolution
@@ -43,6 +44,5 @@ Computational cost holds the same reduction:
 \frac{D_k \cdot D_k \cdot M \cdot D_f \cdot D_f + 1 \cdot 1 \cdot M \cdot N \cdot D_f \cdot D_f}{D_k \cdot D_k \cdot M \cdot N \cdot D_f \cdot D_f} = \frac{1}{N} + \frac{1}{D_k^2}
 {{< /katex >}}
 
-<div align=center>
-<img src="./figures/MobileNet v1/1.png" alt="icon" style="zoom:60%;" />
-</div>
+
+
