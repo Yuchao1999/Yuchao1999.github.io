@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Reference: MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications
+Official Code: Tensorflow
+Intro#MobileNet is a type of convolutional neural network designed for mobile and embedded vision applications. It is based on a streamlined architeture which uses depthwise seperable convolutions to build light weight deep neural networks with efficient trade-off between latency and accuracy.
+Depthwise Seperable Convolution#Depthwise seperable convolution is the basic component of MobileNets architecture. It is a form of factorized convolutions which factorize a standard convolution into a depthwise convolution and a \(1 \times 1\)convolution called pointwise convolution.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="MobileNet v1" />
+<meta property="og:description" content="Reference: MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications
+Official Code: Tensorflow
+Intro#MobileNet is a type of convolutional neural network designed for mobile and embedded vision applications. It is based on a streamlined architeture which uses depthwise seperable convolutions to build light weight deep neural networks with efficient trade-off between latency and accuracy.
+Depthwise Seperable Convolution#Depthwise seperable convolution is the basic component of MobileNets architecture. It is a form of factorized convolutions which factorize a standard convolution into a depthwise convolution and a \(1 \times 1\)convolution called pointwise convolution." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Yuchao1999.github.io/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v1/" /><meta property="article:section" content="docs" />
+
+
+<title>MobileNet v1 | Yuchao</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.34ef609b4b8b5e8a1f34a32d3efe0a23895ce5ac2424322691b0f613e6844e97.js" integrity="sha256-NO9gm0uLXoofNKMtPv4KI4lc5awkJDImkbD2E&#43;aETpc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Yuchao</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a769dfd300843956c91cb5d6ec0ea867" class="toggle" checked />
+    <label for="section-a769dfd300843956c91cb5d6ec0ea867" class="flex justify-between">
+      <a href="/docs/Light-Weight-Neural-Networks/" class="">Light Weight Neural Networks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-865b0ecfd56dfaf49ec4cd9a3b5233b5" class="toggle" checked />
+    <label for="section-865b0ecfd56dfaf49ec4cd9a3b5233b5" class="flex justify-between">
+      <a href="/docs/Light-Weight-Neural-Networks/CNN-Series/" class="">CNN Series</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v1/" class="active">MobileNet v1</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Transformer Series</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e020750cf03568659de01952ed3d177f" class="toggle"  />
+    <label for="section-e020750cf03568659de01952ed3d177f" class="flex justify-between">
+      <a href="/docs/Reinforcement-Learning/" class="">Reinforcement learning</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/Yuchao1999"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>MobileNet v1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#depthwise-seperable-convolution">Depthwise Seperable Convolution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>Reference: 
+  <a href="https://arxiv.org/pdf/1704.04861.pdf">MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</a></p>
+<p>Official  Code: 
+  <a href="https://github.com/tensorflow/tensorflow/blob/v2.4.1/tensorflow/python/keras/applications/mobilenet.py">Tensorflow</a></p>
+<h2 id="intro">
+  Intro
+  <a class="anchor" href="#intro">#</a>
+</h2>
+<p>MobileNet is a type of convolutional neural network designed for mobile and embedded vision applications. It is based on a streamlined architeture which uses <strong>depthwise seperable convolutions</strong> to build <strong>light weight</strong> deep neural networks with efficient trade-off between latency and accuracy.</p>
+<h2 id="depthwise-seperable-convolution">
+  Depthwise Seperable Convolution
+  <a class="anchor" href="#depthwise-seperable-convolution">#</a>
+</h2>
+<p>Depthwise seperable convolution is the basic component of MobileNets architecture. It is a form of factorized convolutions which factorize a standard convolution into a <strong>depthwise convolution</strong> and a 
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(1 \times 1\)
+</span>
+ convolution called <strong>pointwise convolution</strong>.</p>
+<p><code>Depthwise convolution</code> apply a single filter on each input channel. <code>Pointwise convolution</code> integarates the information flowing through different channels, using <span>
+  \(1 \times 1\)
+</span>
+  convolution.</p>
+<p>For the purpose of designing a kind of light weight deep neural networks, taking Depthwise Seperable convolution instead of standard convolutions into the architeture is a good choice because it brings huge amounts of <strong>parameter cutting</strong>. The fowllowing part will calculate the parameter numbers of Depthwise Seperable Convolution compared with standard convolution.</p>
+<p>Assuming that the dimension of input feature map is <span>
+  \( D_f \times D_f \times M \)
+</span>
+  and the dimension of output feature map is <span>
+  \( D_f \times D_f \times N \)
+</span>
+ where <span>
+  \( M \)
+</span>
+ and <span>
+  \( N \)
+</span>
+ is the number of input and output channels respectively,  the convolution kernel size is <span>
+  \( D_k \times D_k \)
+</span>
+.</p>
+<p>Standard convolution has the parameter number of:
+<span>
+  \[
+D_k \times D_k \times M \times N\]
+</span>
+</p>
+<p>Depthwise seperable convolution has the parameter number of:
+<span>
+  \[
+D_k \times D_k \times M &#43; 1 \times 1 \times M \times N\]
+</span>
+</p>
+<p>As expressed above,  we can get a reduction in parameter numbers of:
+<span>
+  \[
+\frac{D_k \cdot D_k \cdot M &#43; 1 \cdot 1 \cdot M \cdot N}{D_k \cdot D_k \cdot M \cdot N} = \frac{1}{N} &#43; \frac{1}{D_k^2}\]
+</span>
+</p>
+<p>Computational cost holds the same reduction:
+<span>
+  \[
+\frac{D_k \cdot D_k \cdot M \cdot D_f \cdot D_f &#43; 1 \cdot 1 \cdot M \cdot N \cdot D_f \cdot D_f}{D_k \cdot D_k \cdot M \cdot N \cdot D_f \cdot D_f} = \frac{1}{N} &#43; \frac{1}{D_k^2}\]
+</span>
+</p>
+<div align=center>
+<img src="./figures/MobileNet v1/1.png" alt="icon" style="zoom:60%;" />
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Yuchao1999/Yuchao1999.github.io/content/content/docs/Light%20Weight%20Neural%20Networks/CNN%20Series/MobileNet%20v1.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#depthwise-seperable-convolution">Depthwise Seperable Convolution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

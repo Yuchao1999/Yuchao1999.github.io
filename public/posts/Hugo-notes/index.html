@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hugo manual.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Hugo notes" />
+<meta property="og:description" content="Hugo manual." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Yuchao1999.github.io/posts/Hugo-notes/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-12-11T00:00:00+00:00" />
+<title>Hugo notes | Yuchao</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.34ef609b4b8b5e8a1f34a32d3efe0a23895ce5ac2424322691b0f613e6844e97.js" integrity="sha256-NO9gm0uLXoofNKMtPv4KI4lc5awkJDImkbD2E&#43;aETpc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Yuchao</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a769dfd300843956c91cb5d6ec0ea867" class="toggle"  />
+    <label for="section-a769dfd300843956c91cb5d6ec0ea867" class="flex justify-between">
+      <a href="/docs/Light-Weight-Neural-Networks/" class="">Light Weight Neural Networks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-865b0ecfd56dfaf49ec4cd9a3b5233b5" class="toggle"  />
+    <label for="section-865b0ecfd56dfaf49ec4cd9a3b5233b5" class="flex justify-between">
+      <a href="/docs/Light-Weight-Neural-Networks/CNN-Series/" class="">CNN Series</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/Light-Weight-Neural-Networks/CNN-Series/MobileNet-v1/" class="">MobileNet v1</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Transformer Series</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e020750cf03568659de01952ed3d177f" class="toggle"  />
+    <label for="section-e020750cf03568659de01952ed3d177f" class="flex justify-between">
+      <a href="/docs/Reinforcement-Learning/" class="">Reinforcement learning</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/Yuchao1999"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Hugo notes</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#before-hugo">Before Hugo</a></li>
+        <li><a href="#hugo-directory-structrue">Hugo directory structrue</a></li>
+        <li><a href="#hugo-basic-commands">Hugo basic commands</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/Hugo-notes/">Hugo notes</a>
+  </h1>
+  
+  <h5>December 11, 2023</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/Hugo/">Hugo</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/Hugo/">Hugo</a>, 
+      <a href="/tags/Basic-Command/">Basic Command</a>, 
+      <a href="/tags/Development/">Development</a>
+  </div>
+  
+
+
+
+<p><strong>
+  <a href="https://gohugo.io/">Hugo official website</a></strong></p>
+<p>Hugo, written in <code>Go</code>,  is a kind of static site generator which is fast and user-friendly. Websites built with Hugo are extremely fast and secure.</p>
+<h2 id="before-hugo">
+  Before Hugo
+  <a class="anchor" href="#before-hugo">#</a>
+</h2>
+<ol>
+<li>
+<p>Create a new repository in your github.</p>
+<blockquote class="book-hint info">
+  Repository name mast be the <u>[username].github.io</u>
+</blockquote>
+
+</li>
+<li>
+<p>Config your github pages.</p>
+</li>
+</ol>
+<h2 id="hugo-directory-structrue">
+  Hugo directory structrue
+  <a class="anchor" href="#hugo-directory-structrue">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>--&gt;yourBlogRoot/ (Blog Root)
+</span></span><span style="display:flex;"><span>    --&gt;archetypes/
+</span></span><span style="display:flex;"><span>    --&gt;assets/
+</span></span><span style="display:flex;"><span>    --&gt;content/	# markdown files get turned into online pages, posts, etc
+</span></span><span style="display:flex;"><span>    --&gt;data/
+</span></span><span style="display:flex;"><span>    --&gt;i18n/
+</span></span><span style="display:flex;"><span>    --&gt;layouts/	# html templates provide structure
+</span></span><span style="display:flex;"><span>    --&gt;public/
+</span></span><span style="display:flex;"><span>    --&gt;resources/
+</span></span><span style="display:flex;"><span>    --&gt;static/	# images, css, js files available at site root
+</span></span><span style="display:flex;"><span>    --&gt;themes/	# downloaded themes
+</span></span><span style="display:flex;"><span>    --&gt;config.toml	# hugo configuration settings
+</span></span></code></pre></div><h2 id="hugo-basic-commands">
+  Hugo basic commands
+  <a class="anchor" href="#hugo-basic-commands">#</a>
+</h2>
+<ol>
+<li>
+<p>Create a hugo directory to store all the source files and configurations , then get into the root directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo new site myBlog
+</span></span><span style="display:flex;"><span>cd myBlog
+</span></span></code></pre></div></li>
+<li>
+<p>Create your contents. To build your site, run the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div></li>
+</ol>
+<p>​		The pubilc directory will be generated when  you run this command.</p>
+<ol start="3">
+<li>
+<p>To view your site while developing layouts or creating contents, get into your root directory and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo server (use &#34;hugo server --help&#34; to see more operations)
+</span></span></code></pre></div></li>
+<li>
+<p>Comparison with Hexo(other site generator), Hugo can&rsquo;t submit new contents to  <code>GitHub Pages</code> automatically. So that&rsquo;s our job.</p>
+<p>If you are the first time to develop Hugo using  <code>GitHub Pages</code>, run the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/[GitHub username]/[GitHub username].github.io.git
+</span></span><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>git commit -m &#34;whaterver you want to introduce your repo&#34;
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><p>If not, run the following code when you need to upload new contents:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>git commit -m &#34;Introduce this change&#34;
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div></li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Yuchao1999/Yuchao1999.github.io/content/content/posts/Hugo%20notes.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#before-hugo">Before Hugo</a></li>
+        <li><a href="#hugo-directory-structrue">Hugo directory structrue</a></li>
+        <li><a href="#hugo-basic-commands">Hugo basic commands</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

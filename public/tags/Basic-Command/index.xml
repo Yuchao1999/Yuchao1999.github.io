@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic Command on Yuchao</title>
+    <link>https://Yuchao1999.github.io/tags/Basic-Command/</link>
+    <description>Recent content in Basic Command on Yuchao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://Yuchao1999.github.io/tags/Basic-Command/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo notes</title>
+      <link>https://Yuchao1999.github.io/posts/Hugo-notes/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://Yuchao1999.github.io/posts/Hugo-notes/</guid>
+      <description>Hugo official website
+Hugo, written in Go, is a kind of static site generator which is fast and user-friendly. Websites built with Hugo are extremely fast and secure.
+Before Hugo#Create a new repository in your github.
+Repository name mast be the [username].github.ioConfig your github pages.
+Hugo directory structrue#--&amp;gt;yourBlogRoot/ (Blog Root) --&amp;gt;archetypes/ --&amp;gt;assets/ --&amp;gt;content/	# markdown files get turned into online pages, posts, etc --&amp;gt;data/ --&amp;gt;i18n/ --&amp;gt;layouts/	# html templates provide structure --&amp;gt;public/ --&amp;gt;resources/ --&amp;gt;static/	# images, css, js files available at site root --&amp;gt;themes/	# downloaded themes --&amp;gt;config.</description>
+    </item>
+    
+  </channel>
+</rss>
