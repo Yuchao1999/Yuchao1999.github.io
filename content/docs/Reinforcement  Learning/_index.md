@@ -1,5 +1,6 @@
 ---
 bookCollapseSection: true
+bookHidden: true
 weightL: 1
 title: "Reinforcement learning"
 ---
