@@ -10,7 +10,6 @@ date = "2024-02-25"
 categories = [
     "Hugo",
 ]
-menu = "main"
 
 +++
 
