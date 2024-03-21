@@ -16,5 +16,5 @@ categories = [
 ### So this page is for her. Wishing her many years of joy and happiness.
 
 <div align=center>
-<img src="../figures/LabScene.jpg" alt="icon" style="zoom:30%;" />
+<img src="./figures/LabScene.jpg" style="zoom:30%;" />
 </div>
